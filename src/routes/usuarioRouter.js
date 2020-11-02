@@ -5,9 +5,9 @@ import { getUser } from '../middlewares/ldap'
 
 const router = routerx()
 
-router.post('/', usuarioController.add)
+router.post('/', usuarioController.create)
 router.put('/:id', usuarioController.update)
-router.get('/', usuarioController.list)
+router.get('/', usuarioController.index)
 router.get('/:id', usuarioController.findById)
 router.post('/login', getUser, usuarioController.login)
 

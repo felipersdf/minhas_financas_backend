@@ -3,9 +3,9 @@ import lancamentosController from '../controllers/lancamentosController'
 
 const router = routerx()
 
-router.post('/', lancamentosController.add)
+router.post('/', lancamentosController.create)
 router.put('/:id', lancamentosController.update)
-router.get('/', lancamentosController.list)
+router.get('/', lancamentosController.index)
 router.get('/:id', lancamentosController.findById)
 
 export default router

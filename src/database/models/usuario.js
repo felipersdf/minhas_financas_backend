@@ -2,9 +2,9 @@
 
 module.exports = (sequelize, DataTypes) => {
     const Usuario = sequelize.define('Usuario', {
-        nome: DataTypes.STRING,
-        usuario: DataTypes.STRING,
-        senha: DataTypes.STRING,
+        name: DataTypes.STRING,
+        email: DataTypes.STRING,
+        password: DataTypes.STRING,
     }, {
         freezeTableName: true,
         tableName: 'usuarios'

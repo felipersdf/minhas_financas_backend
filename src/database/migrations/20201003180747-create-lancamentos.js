@@ -10,27 +10,25 @@ module.exports = {
         type: Sequelize.INTEGER,
       },
 
-      descricao: {
+      description: {
         allowNull: false,
         type: Sequelize.STRING,
       },
 
-      data: {
+      date: {
         allowNull: false,
         type: Sequelize.DATE,
         unique: false,
       },
 
-      valor: {
+      value: {
         allowNull: false,
-        type: Sequelize.STRING,
-        unique: false,
+        type: Sequelize.INTEGER,
       },
 
       status: {
         allowNull: false,
-        type: Sequelize.STRING,
-        unique: false,
+        type: Sequelize.BOOLEAN,
       },
 
       tipo_lancamento: {

@@ -10,21 +10,20 @@ module.exports = {
                 type: Sequelize.INTEGER
             },
 
-            nome: {
+            name: {
                 allowNull: false,
                 type: Sequelize.STRING
             },
 
-            usuario: {
+            email: {
                 allowNull: false,
                 type: Sequelize.STRING,
-                unique: false
+                unique: true
             },
 
-            senha: {
+            password: {
               allowNull: false,
               type: Sequelize.STRING,
-              unique: false
           },
 
             // lancamentos_id: {

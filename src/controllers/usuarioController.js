@@ -4,7 +4,7 @@ import tokenService from "../services/tokenService";
 var bcrypt = require("bcryptjs");
 
 export default {
-  add: (req, res, next) => {
+  create: (req, res, next) => {
     try {
       Usuario.create(req.body)
         .then((response) => {
@@ -59,7 +59,7 @@ export default {
     }
   },
 
-  list: (req, res, next) => {
+  index: (req, res, next) => {
     try {
       Usuario.findAll({
         // order: ["nome"],

@@ -2,9 +2,9 @@
 
 module.exports = (sequelize, DataTypes) => {
     const Lancamentos = sequelize.define('Lancamentos', {
-        descricao: DataTypes.STRING,
-        data: DataTypes.DATE,
-        valor: DataTypes.STRING,
+        description: DataTypes.STRING,
+        date: DataTypes.DATE,
+        value: DataTypes.INTEGER,
         status: DataTypes.STRING,
         tipo_lancamento: DataTypes.STRING,
         status_lancamento: DataTypes.STRING,

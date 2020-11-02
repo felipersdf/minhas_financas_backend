@@ -2,7 +2,7 @@ import { response } from "express";
 import { Lancamentos, Usuario } from "../database/models";
 
 export default {
-  add: (req, res, next) => {
+  create: (req, res, next) => {
     try {
       Lancamentos.create(req.body)
         .then((response) => {
@@ -58,7 +58,7 @@ export default {
     }
   },
 
-  list: (req, res, next) => {
+  index: (req, res, next) => {
     try {
       Lancamentos.findAll({
         attributes: {
